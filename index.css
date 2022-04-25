@@ -1,0 +1,143 @@
+:root {
+    --color-green: #28F160;
+    --color-white: #f7f7f7;
+    --color-blue: #2069F6;
+    --min-medium: 60vh;
+    --min-small: 15vh;
+}
+
+.nav-settings {
+    align-items: center;
+}
+
+.navbar-item>.nav-img {
+    max-height: none !important;
+    width: 40px !important;
+}
+
+.background-header {
+    background-image: url("./assets/header.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-section-size {
+    min-height: var(--min-medium);
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: var(--min-medium);
+}
+
+.covid-section-size {
+    min-height: var(--min-small);
+}
+
+.background-covid {
+    background-color: var(--color-blue);
+}
+
+.covid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--min-small);
+    gap: 20px;
+}
+
+
+.green-text {
+    color: var(--color-green);
+}
+
+.white-text {
+    color: var(--color-white);
+}
+
+.black-text {
+    color: black;
+}
+
+.bold-text {
+    font-weight: bolder !important;
+}
+
+.light-text {
+    font-weight: lighter !important;
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-services {
+    background-image: url("./assets/bg-services.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 500px;
+    height: 0;
+    overflow: hidden
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 500px !important
+}
+
+.contacto-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--min-small);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .no-margin-mobile {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .contacto-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mb-text-res{
+        font-size: 2.5rem !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .mb-text-res-2{
+        font-size: 1.2rem !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .mb-text-res-2{
+        font-size: 1.5rem !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .covid-flex {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
